@@ -16,7 +16,7 @@
 # Set the path to your PHP and script
 PHP="/usr/bin/php"  # Adjust this path to your PHP binary
 SCRIPT="/opt/address/bin/simps.php"
-ADDRESS_SERVER_PORT=8080
+export ADDRESS_SERVER_PORT=8080
 TMP=/tmp
 
 # Function to start the service

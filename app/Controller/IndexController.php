@@ -18,9 +18,8 @@ class IndexController
         $response->end(
             json_encode(
                 [
-                    'ip' => $request,
-                ],
-                JSON_PRETTY_PRINT
+                    'ip' => $request->header['x-forwarded-for'] ?? '127.0.0.1',
+                ]
             )
         );
     }

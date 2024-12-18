@@ -10,6 +10,7 @@ declare(strict_types=1);
  */
 return [
     ['GET', '/', '\App\Controller\IndexController@index'],
+    ['GET', '/address.php', '\App\Controller\IndexController@index'],
     ['GET', '/hello[/{name}]', '\App\Controller\IndexController@hello'],
     ['GET', '/favicon.ico', function ($request, $response) {
         $response->end('');

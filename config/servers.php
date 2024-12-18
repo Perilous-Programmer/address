@@ -13,7 +13,7 @@ return [
     'mode' => SWOOLE_PROCESS,
     'http' => [
         'ip' => '0.0.0.0',
-        'port' => 9501,
+        'port' => (int) $_SERVER['ADDRESS_SERVER_PORT'] ?? 9501,
         'sock_type' => SWOOLE_SOCK_TCP,
         'callbacks' => [
         ],
